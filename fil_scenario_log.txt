@@ -1,0 +1,4 @@
+2024-03-24 20:12:01 - root - WARNING - The bot has been started: Fil FC AI Scenario generator | @fil_fc_ai_sc_bot
+2024-03-24 20:12:04 - root - WARNING - 2124501689: Ћюбопытный пользователь спрашивает про токены
+2024-03-24 20:16:52 - TeleBot - ERROR - Infinity polling: polling exited
+2024-03-24 20:16:52 - TeleBot - ERROR - Break infinity polling
