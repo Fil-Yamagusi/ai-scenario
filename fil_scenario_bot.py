@@ -209,7 +209,7 @@ def handle_tokens(m: Message):
 
     bot.send_message(
         user_id,
-        f'{"\n".join(get_tokens_info(db_conn, user_data[user_id]))}',
+        "\n".join(get_tokens_info(db_conn, user_data[user_id])),
         reply_markup=hideKeyboard)
 
 
@@ -340,9 +340,9 @@ def settings_entourages(m: Message):
         bot.send_message(
             user_id,
             'Отлично, полный набор настроек!\n\n'
-            f'Жанр: <b>{user_data[user_id]['genre']}</b>\n'
-            f'Персонаж: <b>{user_data[user_id]['character']}</b>\n'
-            f'Антураж: <b>{user_data[user_id]['entourage']}</b>\n\n'
+            f'Жанр: <b>{user_data[user_id]["genre"]}</b>\n'
+            f'Персонаж: <b>{user_data[user_id]["character"]}</b>\n'
+            f'Антураж: <b>{user_data[user_id]["entourage"]}</b>\n\n'
             'Пора генерить сценарий! /generate\n'
             '(Помни про ограничения сессий и токенов)',
             parse_mode="HTML",
@@ -402,9 +402,9 @@ def handle_generate(m: Message):
     else:
         bot.send_message(
             user_id,
-            f'Жанр: <b>{user_data[user_id]['genre']}</b>\n'
-            f'Персонаж: <b>{user_data[user_id]['character']}</b>\n'
-            f'Антураж: <b>{user_data[user_id]['entourage']}</b>\n\n'
+            f'Жанр: <b>{user_data[user_id]["genre"]}</b>\n'
+            f'Персонаж: <b>{user_data[user_id]["character"]}</b>\n'
+            f'Антураж: <b>{user_data[user_id]["entourage"]}</b>\n\n'
             f''
             f'Ограничение токенов в этой сессии: {MAX_TOKENS_IN_SESSION}',
             parse_mode="HTML",
